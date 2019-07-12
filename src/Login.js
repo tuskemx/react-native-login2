@@ -13,13 +13,13 @@ export default class Login extends Component {
                     keyboardType='email-address'
                     returnKeyType="next"
                     placeholder='Email or Mobile Num'
-                    placeholderTextColor='rgba(225,225,225,0.7)' />
+                    placeholderTextColor='black' />
 
                 <TextInput style={this.Styles.input}
                     returnKeyType="go"
                     ref={(input) => this.passwordInput = input}
                     placeholder='Password'
-                    placeholderTextColor='rgba(225,225,225,0.7)'
+                    placeholderTextColor='black'
                     secureTextEntry />
 
 
@@ -36,14 +36,14 @@ export default class Login extends Component {
             backgroundColor: 'rgba(225,225,225,0.2)',
             marginBottom: 10,
             padding: 10,
-            color: '#fff'
+            color: 'black'
         },
         buttonContainer: {
             backgroundColor: '#2980b6',
             paddingVertical: 15
         },
         buttonText: {
-            color: '#fff',
+            color: 'black',
             textAlign: 'center',
             fontWeight: '700'
         }
