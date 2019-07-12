@@ -6,16 +6,22 @@ export default class Login extends Component {
         return (
             <View>
                 <Text> textInComponent </Text>
-                <TextInput
-
+                <TextInput style={this.Styles.input}
                     autoCapitalize="none"
-
+                    onSubmitEditing={() => this.passwordInput.focus()}
                     autoCorrect={false}
                     keyboardType='email-address'
                     returnKeyType="next"
                     placeholder='Email or Mobile Num'
+                    placeholderTextColor='rgba(225,225,225,0.7)' />
+
+                <TextInput style={this.Styles.input}
+                    returnKeyType="go"
+                    ref={(input) => this.passwordInput = input}
+                    placeholder='Password'
                     placeholderTextColor='rgba(225,225,225,0.7)'
-                />
+                    secureTextEntry />
+
 
 
             </View>
@@ -42,5 +48,6 @@ export default class Login extends Component {
             fontWeight: '700'
         }
     })
+
 }
 
